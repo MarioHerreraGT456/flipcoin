@@ -1,49 +1,63 @@
 body {
   margin: auto;
   padding: auto;
-  display: flex;
-  flex-flow: column;
-  place-content: center;
-  background-color: rgb(236, 184, 127);
+  background-color: #404a65;
   min-height: 100vh;
 }
 
 #img-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 200px;
+  gap: 80px;
+  height: auto;
 }
 
-.container {
+.container,
+.text-container {
   display: flex;
   flex-flow: column;
-  place-content: center;
   align-items: center;
   text-align: center;
 }
 
+.text-container {
+  gap: 5px;
+}
+.text-container p {
+  margin-bottom: 55px;
+  margin-top: -35px;
+}
+
+.letter-shadow {
+  text-shadow: 5px 5px 0px #35383f;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #35383f;
+}
+
 .size-l {
-  font-size: 50px;
+  font-size: 64px;
+}
+.size-x {
+  font-size: 24px;
+}
+.size-s {
+  font-size: 20px;
 }
 
-.ubuntu-regular {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
   font-style: normal;
-}
-
-.ubuntu-bold {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  color: #ecedf0;
 }
 
 img {
   max-width: 150px;
   height: auto;
-  position: absolute;
+  /* position: absolute; */
   transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
   cursor: pointer;
 }
@@ -57,10 +71,10 @@ img:hover {
 }
 
 button {
-  background-color: aqua;
+  background-color: #1f6fb0;
   border-radius: 10px;
   border: 1px solid rgb(235, 45, 45);
-  padding: 15px 30px;
+  padding: 10px 35px;
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   cursor: pointer;
