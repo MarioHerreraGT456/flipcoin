@@ -12,29 +12,39 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Flip Coin MH</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="ubuntu-bold">Gira la moneda</h1>
+      <div class="text-container">
+        <h1 class="kanit-semibold size-l letter-shadow">Flip the Coin</h1>
 
-      <p class="ubuntu-regular">
-        Por favor presiona el boton para girar la moneda
-      </p>
+        <p class="kanit-semibold size-x">
+          Press the coin or the button to flip the coin
+        </p>
+      </div>
 
       <div id="img-container">
-        <img src="coin1.png" alt="Cara de la moneda" id="coin1" class="" />
+        <img src="heads.svg" alt="Cara de la moneda" id="coin1" class="" />
         <img
-          src="coin2.png"
+          src="tails.svg"
           alt="Cruz de la moneda"
           id="coin2"
           class="hidden"
         />
+        <img src="shadow.svg" alt="Cruz de la moneda" />
       </div>
+      <p class="kanit-semibold size-x" id="title">HEAD</p>
 
       <!-- CORRECCIÓN: Añadir clase size-l y cambiar onclick -->
-      <button class="ubuntu-regular size-l" type="button" id="flip">
-        Girar
+      <button class="kanit-semibold size-s" type="button" id="flip">
+        RAMDOMS
       </button>
     </div>
     <script src="index.js"></script>
