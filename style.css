@@ -1,0 +1,73 @@
+body {
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-flow: column;
+  place-content: center;
+  background-color: rgb(236, 184, 127);
+  min-height: 100vh;
+}
+
+#img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 200px;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  place-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.size-l {
+  font-size: 50px;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+img {
+  max-width: 150px;
+  height: auto;
+  position: absolute;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: aqua;
+  border-radius: 10px;
+  border: 1px solid rgb(235, 45, 45);
+  padding: 15px 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #00cccc;
+  transform: scale(1.05);
+}
